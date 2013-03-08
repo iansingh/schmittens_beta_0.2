@@ -21,7 +21,7 @@
  <ul id="nav" >
  	<li style="margin-left:-35px;	font-weight:bold; "><a href="/index.php" >schmittens.&beta;</a>
  	</li> 	
- 	<li><a href="/eventlist.php" >Find</a>
+ 	<li><a href="/eventlist.php" >Listings</a>
  		<ul>
  			<li><a href="/eventlist.php" >All</a></li>
  			<li><a href="/eventlist.php?eventtype=1&time=1&list=List+events">Party</a></li>
