@@ -1,0 +1,622 @@
+
+body{
+background-color: #FFF;
+
+	}
+
+h1{
+	font-size: 1.2em;
+	font-style: bold;
+}
+
+h2{
+	font-size: 1.0em;
+	font-style: bold;
+}
+
+h3{
+	font-size: 1em;
+	font-style: bold;}
+	
+h4{
+	margin-left: 20px;
+	font-size: 1em;
+	font-style: italic;
+	}
+	
+p{
+	text-align: justify;
+	margin-left: 0px;
+	margin-right: 5px;
+	}
+
+div.container {
+	/*background-color: white;*/
+	/*width: 750px;*/
+	margin-left: auto;
+	margin-right: auto;
+	
+	}
+
+div.minicontainer {
+	background-color: #d0d0d0;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	}
+
+.menu{
+    w1277515302idth: 100%;
+    background-color: #333; 
+    font-family: arial, helvetica, sans-serif;
+    font-size: 100%;
+    }
+     
+.menu ul{
+    margin: 0; padding: 0;
+    float: left;}
+ 
+.menu ul li{
+    display: inline;}
+
+.menu ul li title{
+    display: inline;
+    font-style: bold;
+    font-size: 110%;
+    }
+ 
+.menu ul li a{
+    float: left; 
+    text-decoration: none;
+    color: white; 
+    padding: 10.5px 11px;
+    background-color: #333; }
+ 
+.menu ul li a:visited{
+    color: white;}
+ 
+.menu ul li a:hover, .menu ul li .current{
+    color: #fff;
+    background-color:#0b75b2;
+    }
+
+
+#nav{
+	list-style:none;
+	margin-bottom:10px;
+	/* Clear floats */
+	float:left;
+	width:710px;
+	position:relative;
+	z-index:5;
+	background-color: #333; 
+	color: #fff;
+	height: 40px;
+	margin-top: 0px;
+	
+}
+#nav li{
+	float:left;
+	position:relative;
+}
+#nav a{
+	display: block;
+	color:#fff;
+	background:#333;
+	text-decoration:none;
+	padding: 10px;
+}
+#nav a:hover{
+	color:#fff;
+	background:#0b75b2;
+	text-decoration:underline;
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+	background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#nav ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	font-size: 0.8em;
+	float:none;
+}
+#nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+	padding: 3px;
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+	margin-left: -40px;
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background:#0b75b2;
+	text-decoration:none;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#333;
+}
+
+
+
+head{
+	width: 750px;	
+	}
+	
+body{
+	width: 750px;
+	font-family: arial, helvetica, sans-serif;
+
+	}
+	
+a{
+	text-decoration: none;
+	color: #0b75b2;
+	}
+	
+a:hover{
+	color: white;
+	background-color: #0b75b2;
+	}
+
+div.header {
+	width: 750px;
+	background-color: #333;
+	margin-bottom: 10px;
+	}
+	
+div.columnleft {
+	width: 480px;
+	min-height: 450px;
+	vertical-align: top;
+	font-size: 0.9em;
+	background-color: #EEE;
+	padding: 5px;
+	float: left;
+	}
+
+div.columnleft_index {
+	width: 480px;
+	vertical-align: top;
+	font-size: 0.9em;
+	background-color: #EEE;
+	padding: 5px;
+	float: left;
+	}
+	
+div.picoverlay {
+	
+	}
+	 
+div.columnright {
+	width: 240px;
+	background-color: #EEE;
+	position: relative;
+	padding: 5px;
+	float: left;
+	margin-left: 10px;
+	}
+
+div.socialmedia{
+	margin-top: 3px;
+	margin-bottom: 3px;
+	vertical-align: text-bottom;
+	font-size: 0.8em;
+	}
+
+iframe.event { float: left; padding-right: -10px; }
+
+	
+div.messagebox{
+	font-size: 0.8em;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+	padding: 3px;
+	outline-color: #0b75b2;
+	outline-width: thin;
+	outline-style: solid;
+	}
+	
+div.fb-like{
+	margin-bottom: 5px;
+	}	
+	
+div.twitter{
+	font-size: 0.8em;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+
+	}
+
+div.twittershare{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+	
+div.facebookshare{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+	
+div.pinterest{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+div.mainpagelistingsbygenretop {
+	width: 230px;
+	float: left;
+	padding: 5px;
+	}	
+	
+p.mainpagelistingbygenretitle {
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	font-size: 1.1em;
+	margin-top: 1px;
+	margin-bottom: 5px;	
+	}
+	
+div.mainpagelistingsbygenre {
+	width: 150px;
+	float: left;
+	padding: 5px;
+
+	}	
+	
+div.form {	
+	width: 100%;
+	position: relative;
+	/*float: left;*/
+	}	
+	
+td.required {
+	background-color: #f4cac8;
+	}
+
+div.required {
+	background-color: #f4cac8;
+	}
+
+div.ads {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-color: #EEE;
+	}
+	
+div.eventlist {
+	background-color: #EEE;
+	position: relative;
+	float: left;
+	font-size: 0.9em;
+	margin-top: 10px;
+	}
+	
+table.evlist {
+	border-collapse: collapse;
+	}
+	
+td.eventlistpic{
+	width: 160px;
+	}
+
+td.eventlistinfo{
+	padding: 3px;
+	width: 270px;
+	}
+
+td.eventlistextra{
+	width: 40px;
+	vertical-align: top;
+	}
+	
+div.eventlist_small{
+	margin-top: -2px;
+	margin-bottom: -10px;
+
+	}
+p.eventlist_small{	
+	font-size: 0.8em;
+	}
+	
+div.locationlist {
+	background-color: #EEE;
+	position: relative;
+	float: left;
+	font-size: 0.9em;
+	margin-top: 10px;
+	}
+	
+table.locationlist {
+	border-collapse: collapse;	
+	}
+
+td.locationlistpic{
+	width: 160px;	
+	}	
+	
+tr.listitem2{
+	vertical-align: top;
+	background-color: white;
+	}
+	
+tr.listitem1{
+	vertical-align: top;
+	}	
+	
+	.locationlistpic{
+	width: 160px;		
+		}
+		
+	.locationlistinfo{
+	padding: 3px;
+	width: 270px;
+	}
+	
+	.locationlistextra{
+	width: 40px;
+	vertical-align: top;
+	}
+	
+	.locationlisttitle{
+		font-style: bold;
+		margin-bottom: 3px;
+	}
+	
+	.locationlisturl{
+		font-style: italic;
+		margin-top: 5px;
+	}
+
+div.alerttext {
+	background-color: #f4cac8;
+	padding: 5px;
+	margin-bottom: 10px;
+	}
+
+div.notice {
+	background-color: #c4e8f4;
+	padding: 5px;
+	margin-bottom: 10px;
+	}
+	
+div.hint {
+	background-color: #c1ffab;
+	padding: 5px;
+	margin-bottom: 10px;
+	}
+
+div.feedback {
+	background-color: #c1ffab;
+	padding: 5px;
+	margin-bottom: 10px;
+	}
+	
+div.eventlistmenu {
+	background-color: #EEE;
+	padding: 5px;
+	margin-bottom: 10px;
+	}
+
+
+div.topevent{	
+	margin-bottom: 10px;
+	background-color: #eee;
+	float: left;
+	}
+	
+div.topeventpicture{
+	width: 480px;	
+	background-color: #eee;
+	float: left;
+	}
+
+
+	
+div.topeventinfo{
+	position: absolute;
+	margin-top: 222px;
+	margin-left: 5px;
+	background-color: white;
+	font-size: 1em;
+	float: left;
+	padding: 3px;	
+	padding-right: 5px;
+	opacity: 0.9;
+	}
+	
+div.topeventtitle{
+	background-color: white;
+	font-size: 1.6em;
+	font-weight: bold;
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 5px;
+	padding: 3px;
+	
+	}	
+
+div.frontpageevents{
+	display: block;
+	float: left;
+	}
+
+div.mainpageevent{
+	font-size: 0.9em;
+	margin-left: -4px;
+	margin-bottom: -2px;
+	}
+
+div.mainpageeventtitle {
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 0px;
+	background-color: white;
+	padding: 3px;
+	font-size: 1.2em;
+	font-weight: bold;
+	//text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	}
+		
+div.mainpageeventinfo {
+	text-align: left;
+	position: absolute;
+	margin-top: 95px;
+	margin-left: 0px;
+	padding: 3px;
+	background-color: white;
+	opacity: 0.9;
+	}
+	
+div.footer {
+	width: 750px;
+	background-color: #333;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	float: left;
+	}
+	
+.menubottom{
+    width: 100%;
+    background-color: #333; 
+    font-family: arial, helvetica, sans-serif;
+    font-size: 0.8em;
+    }
+     
+.menubottom ul{
+    margin: 0; padding: 0;
+    float: left;}
+ 
+.menubottom ul li{
+    display: inline;}
+
+.menubottom ul li title{
+    display: inline;
+    font-style: bold;
+    font-size: 110%;
+    }
+ 
+.menubottom ul li a{
+    float: left; 
+    text-decoration: none;
+    color: white; 
+    padding: 5.5px 6px;
+    background-color: #333; }
+ 
+.menubottom ul li a:visited{
+    color: white;}
+ 
+.menubottom ul li a:hover, .menu ul li .current{
+    color: #fff;
+    background-color:#0b75b2;
+    }
+
+div.search {
+	display: inline;
+	float: right;
+	margin-top: -25px;
+	}	
+
+div.search2 {
+	display: inline;
+	float: left;
+	}	
+
+div.separator {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	}
+
+div.idTabs {
+   float:left;
+   width:100%;
+   background:#EEE;
+   border-bottom:2px solid #333;
+   overflow:hidden;
+   position:relative;
+   margin-bottom: 10px;
+}
+div.idTabs ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+div.idTabs ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+
+div.idTabs ul li a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   background:#EEE;
+   color:#333;
+   text-decoration:none;
+   line-height:1.3em;
+}
+div.idTabs ul li a:hover {
+   background:#0b75b2;
+   color:#fff;
+}
+div.idTabs ul li a.active,
+div.idTabs ul li a.active:hover {
+   color:#fff;
+   background:#333;
+   font-weight:bold;
+}	
+
+div.createdby {
+	font-size: 0.8em;
+	}
+	
+#displayinfo ul{
+	list-style-type: none;
+	text-decoration: none;	
+	padding: 0;
+	margin: 0;
+	}
+
+#displayinfo p{
+	display: block;
+	}
+
+.hidden {
+display: none;	
+	}
+	
+.highlight {
+background: #0b75b2;
+color: #fff;
+width: 30%; 	
+	}
+
+div.topnotify {
+	background-color: #EEE;
+	position: relative;
+	float: left;
+	width: 740px;
+	font-size: 0.9em;
+	margin-bottom: 10px;
+	padding: 5px;
+	}

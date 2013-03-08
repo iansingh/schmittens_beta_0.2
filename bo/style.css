@@ -1,0 +1,463 @@
+body{
+background-color: #FFF;
+	}
+
+h1{
+	font-size: 1.2em;
+	font-style: bold;
+}
+
+h2{
+	font-size: 1.0em;
+	font-style: bold;
+}
+
+h3{
+	font-size: 1em;
+	font-style: bold;}
+	
+h4{
+	margin-left: 20px;
+	font-size: 1em;
+	font-style: italic;
+	}
+	
+p{
+	text-align: justify;
+	margin-left: 0px;
+	margin-right: 5px;
+	}
+
+div.container {
+	background-color: white;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	}
+
+.menu{
+    width: 100%;
+    background-color: #333; 
+    font-family: arial, helvetica, sans-serif;
+    font-size: 100%;
+    }
+     
+.menu ul{
+    margin: 0; padding: 0;
+    float: left;}
+ 
+.menu ul li{
+    display: inline;}
+
+.menu ul li title{
+    display: inline;
+    font-style: bold;
+    font-size: 110%;
+    }
+ 
+.menu ul li a{
+    float: left; 
+    text-decoration: none;
+    color: white; 
+    padding: 10.5px 11px;
+    background-color: #333; }
+ 
+.menu ul li a:visited{
+    color: white;}
+ 
+.menu ul li a:hover, .menu ul li .current{
+    color: #fff;
+    background-color:#0b75b2;
+    }
+
+
+#nav{
+	list-style:none;
+	margin-bottom:10px;
+	/* Clear floats */
+	float:left;
+	width:710px;
+	position:relative;
+	z-index:5;
+	background-color: #333; 
+	color: #fff;
+	height: 40x;
+	margin-top: 0px;
+	
+}
+#nav li{
+	float:left;
+	position:relative;
+}
+#nav a{
+	display: block;
+	color:#fff;
+	background:#333;
+	text-decoration:none;
+	padding: 10px;
+}
+#nav a:hover{
+	color:#fff;
+	background:#0b75b2;
+	text-decoration:underline;
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+	background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#nav ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	font-size: 0.8em;
+	float:none;
+}
+#nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+	padding: 3px;
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+	margin-left: -40px;
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background:#0b75b2;
+	text-decoration:none;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#333;
+}
+
+
+
+head{
+	width: 750px;	
+	}
+	
+body{
+	width: 750px;
+	font-family: arial, helvetica, sans-serif;
+
+	}
+	
+a{
+	text-decoration: none;
+	color: #0b75b2;
+	}
+	
+a:hover{
+	color: white;
+	background-color: #0b75b2;
+	}
+
+div.header {
+	width: 750px;
+	background-color: #333;
+	margin-bottom: 10px;
+	}
+	
+div.columnleft {
+	width: 480px;
+	min-height: 450px;
+	vertical-align: top;
+	font-size: 0.9em;
+	background-color: #EEE;
+	padding: 5px;
+	float: left;
+	}
+
+div.columnleft_index {
+	width: 480px;
+	vertical-align: top;
+	font-size: 0.9em;
+	background-color: #EEE;
+	padding: 5px;
+	float: left;
+	}
+	 
+div.columnright {
+	width: 240px;
+	background-color: #EEE;
+	position: relative;
+	padding: 5px;
+	float: left;
+	margin-left: 10px;
+	}
+	
+div.form {	
+	position: relative;
+	float: left;
+	}	
+	
+td.required {
+	background-color: #f4cac8;
+	}
+
+div.ads {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-color: #EEE;
+	}
+	
+div.eventlist {
+	background-color: #EEE;
+	position: relative;
+	float: left;
+	font-size: 0.9em;
+	margin-top: 10px;
+	}
+	
+table.evlist {
+	border-collapse: collapse;
+	width: 480px;
+	}
+	
+td.eventlistpic{
+	width: 160px;
+	}
+
+td.eventlistinfo{
+	padding: 3px;
+	width: 270px;
+	}
+
+td.eventlistextra{
+	width: 40px;
+	vertical-align: top;
+	}
+	
+div.eventlist_small{
+
+	}
+p.eventlist_small{	
+	font-size: 0.8em;
+	}
+	
+div.locationlist {
+	background-color: #EEE;
+	position: relative;
+	float: left;
+	font-size: 0.9em;
+	margin-top: 10px;
+	}
+	
+table.locationlist {
+	border-collapse: collapse;	
+	}
+
+td.locationlistpic{
+	width: 160px;	
+	}	
+	
+tr.listitem2{
+	vertical-align: top;
+	background-color: white;
+	}
+	
+tr.listitem1{
+	vertical-align: top;
+	}	
+	
+	.locationlistpic{
+	width: 160px;		
+		}
+		
+	.locationlistinfo{
+	padding: 3px;
+	width: 270px;
+	}
+	
+	.locationlistextra{
+	width: 40px;
+	vertical-align: top;
+	}
+	
+	.locationlisttitle{
+		font-style: bold;
+		margin-bottom: 3px;
+	}
+	
+	.locationlisturl{
+		font-style: italic;
+		margin-top: 5px;
+	}
+
+div.alerttext {
+	background-color: #f4cac8;
+	padding: 5px;
+	margin-bottom: 10px;
+	}
+
+div.notice {
+	background-color: #c4e8f4;
+	padding: 5px;
+	margin-bottom: 10px;
+	}
+	
+div.eventlistmenu {
+	background-color: #EEE;
+	padding: 5px;
+	margin-bottom: 10px;
+	}
+
+
+div.topevent{	
+	margin-bottom: 10px;
+	height: 280px;
+	background-color: #eee;
+	}
+	
+div.topeventpicture{
+	width: 480px;	
+	padding: 5px;
+	background-color: #eee;
+	float: left;
+	}
+	
+div.topeventinfo{
+	width: 240px;
+	height: 270px;
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	background-color: #EEE;
+	padding: 5px;
+	}
+	
+div.topeventtitle{
+	}	
+
+div.frontpageevents{
+	display: block;
+	}
+
+div.mainpageevent{
+	font-size: 0.9em;
+	margin: -2px;
+	margin-bottom: 5px;
+	}
+		
+div.mainpageeventinfo{
+	padding: 3px;
+	}
+	
+div.footer {
+	width: 750px;
+	background-color: #333;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	float: left;
+	}
+	
+.menubottom{
+    width: 100%;
+    background-color: #333; 
+    font-family: arial, helvetica, sans-serif;
+    font-size: 0.8em;
+    }
+     
+.menubottom ul{
+    margin: 0; padding: 0;
+    float: left;}
+ 
+.menubottom ul li{
+    display: inline;}
+
+.menubottom ul li title{
+    display: inline;
+    font-style: bold;
+    font-size: 110%;
+    }
+ 
+.menubottom ul li a{
+    float: left; 
+    text-decoration: none;
+    color: white; 
+    padding: 5.5px 6px;
+    background-color: #333; }
+ 
+.menubottom ul li a:visited{
+    color: white;}
+ 
+.menubottom ul li a:hover, .menu ul li .current{
+    color: #fff;
+    background-color:#0b75b2;
+    }
+
+div.search {
+	display: inline;
+	float: right;
+	margin-top: -25px;
+	}	
+
+div.search2 {
+	display: inline;
+	float: left;
+	}	
+
+div.separator {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	}
+
+div.idTabs {
+   float:left;
+   width:100%;
+   background:#EEE;
+   border-bottom:2px solid #333;
+   overflow:hidden;
+   position:relative;
+   margin-bottom: 10px;
+}
+div.idTabs ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+div.idTabs ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+
+div.idTabs ul li a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   background:#EEE;
+   color:#333;
+   text-decoration:none;
+   line-height:1.3em;
+}
+div.idTabs ul li a:hover {
+   background:#0b75b2;
+   color:#fff;
+}
+div.idTabs ul li a.active,
+div.idTabs ul li a.active:hover {
+   color:#fff;
+   background:#333;
+   font-weight:bold;
+}	
+
+div.createdby {
+	font-size: 0.8em;
+	}
+	
